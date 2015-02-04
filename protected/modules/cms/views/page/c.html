@@ -1,0 +1,624 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/assets/35ddce9a/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/assets/35ddce9a/css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/assets/35ddce9a/css/bootstrap-yii.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/assets/35ddce9a/css/jquery-ui-bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/themes/cow/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/themes/cow/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/themes/cow/css/media.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/themes/cow/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/themes/cow/css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/themes/cow/css/simply-scroll.css" />
+    <link rel="stylesheet" type="text/css" href="/Shane_Anciso/themes/cow/css/colpick.css" />
+    <script type="text/javascript" src="/Shane_Anciso/assets/a5e2933c/jquery.js"></script>
+    <script type="text/javascript" src="/Shane_Anciso/assets/35ddce9a/js/bootstrap.bootbox.min.js"></script>
+    <script type="text/javascript" src="/Shane_Anciso/assets/35ddce9a/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/Shane_Anciso/themes/cow/js/wow.js"></script>
+    <script type="text/javascript" src="/Shane_Anciso/themes/cow/js/simply-scroll.js"></script>
+    <title>Home | ComputerIQ</title>
+
+
+    <script type="text/javascript">
+
+
+        var count = 0;
+        var totalcount = 0;
+        (function($) {
+            $(function() {
+
+                var windowwidth = $(window).width();
+                //alert(windowwidth);
+
+                $("#scroller2").simplyScroll({frameRate:50});
+
+
+
+
+            });
+
+
+
+        })(jQuery);
+
+
+        theme_url = "/Shane_Anciso/themes/cow";
+        base_url = "http://192.168.0.130/Shane_Anciso";
+        asset_url = "/Shane_Anciso/assets/dae85bd8";
+        var actionid = 'index';
+        var controllerid = 'page';
+
+
+
+    </script>
+    <script type="text/javascript">
+        $(function()
+        {
+
+            new WOW().init();
+            $("#banner1").responsiveSlides({
+
+                speed: 800,
+                auto: true,
+                pause: true,
+                pauseControls: true
+            });
+
+
+        });
+
+
+        $(document).ready(function () {
+            loc = $(location).attr('href');
+            var n = loc.split("/");
+
+            var n1 = loc.split("/").length;
+            var on_page = n[n1 - 1];
+            if(on_page=='range')
+            {
+                //alert(1);
+                $('.footer-icon li:first-child a:first-child').attr('href','https://www.facebook.com/CowtownRange');
+
+            }
+            else
+            {
+                $('.footer-icon li:first-child a:first-child').attr('href','https://www.facebook.com/cowtownstudiosaz');
+
+            }
+            //alert(on_page);
+            var new_page = on_page.split("?");
+            //alert(new_page[0]);
+            $('ul.clearfix a').each(function () {
+
+                //alert($(this).text());
+                if ($(this).attr('pagename') == new_page[0]) {
+                    $(this).closest('li').addClass('active');
+                }
+            });
+
+
+            $(".footer-menu").find('a').each(function () {
+
+                //alert(1);
+                if ($(this).attr('pagename') == new_page[0]) {
+                    $(this).closest('a').addClass('active');
+                }
+            });
+
+
+
+
+        });
+
+
+    </script>
+</head>
+
+<body>
+
+
+
+
+
+<div class="nav-bg">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"><div class="logo"><a href="#" page_ink_id="1" pagename="home">  <img src="http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1418284746.png"> </a></div></div>
+
+            <div class="col-md-9">
+
+                <nav id="nav" role="navigation">
+
+
+                    <a href="#nav" title="Show navigation">Show navigation</a> <a href="#" title="Hide navigation">Hide navigation</a>
+                    <ul class="clearfix">
+
+                        <li class="active"><a class="plink" href="#" page_ink_id="1" pagename="home">Home</a></li>
+
+                        <li>
+                            <a href="#">Computer Repair &nbsp;&#9660;</a>
+                            <ul>
+                                <li><a class="plink" href="#" page_ink_id="16" pagename="computer-repair">Desktop Computer Repair</a></li>
+
+                                <li><a class="plink" href="#"  page_ink_id="17" pagename="home-support">In-Home Support</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Business IT Services &nbsp;&#9660; </a>
+                            <ul>
+                                <li><a class="plink" href="#" page_ink_id="18" pagename="onSite-remoteIT">On Site & Remote IT</a></li>
+
+                                <li><a class="plink" href="#" page_ink_id="19" pagename="ITConsulting-services"> IT Consulting Services</a></li>
+
+                                <li><a class="plink" href="#" page_ink_id="20" pagename="email-communications"> Email & Communications</a></li>
+
+                                <li><a class="plink" href="#" page_ink_id="21" pagename="online-webServices">Online Web Services</a></li>
+
+
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">Web Services &nbsp;&#9660; </a>
+                            <ul>
+                                <li><a class="plink" href="#" page_ink_id="23" pagename="website-products">Website Products</a></li>
+
+                                <li><a class="plink" href="#" page_ink_id="28" pagename="website-designing">Website Designing</a></li>
+
+                                <li><a class="plink" href="#" page_ink_id="35" pagename="content-developement">Content Developement</a></li>
+
+                                <li><a class="plink" href="#" page_ink_id="36" pagename="internet-marketing"> Internet Marketing</a></li>
+
+                                <li><a class="plink" href="#" page_ink_id="38" pagename="custom-serveices"> Custom Serveices</a></li>
+
+                            </ul>
+                        </li>
+
+                        <li ><a href="http://toponlinedesigns.com/" target="_blank">Portfolio</a></li>
+
+                        <li ><a class="plink" href="#" page_ink_id="22" pagename="contact">Contact Us</a></li>
+
+                        <li ><a class="plink" href="#" page_ink_id="39" pagename="custom-service">Custom Service</a></li>
+
+                    </ul>
+
+                </nav>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<div id="content">
+<script>
+    $(function(){
+        $('.plink').parent().removeClass('active');
+        $('.plink').closest('li.dropdown').removeClass('active');
+        $('.plink').each(function(){
+            var pagename = $(this).attr('pagename');
+            if($(this).closest('li.dropdown').length){
+
+
+                if(pagename == 'home'){
+                    $(this).closest('li.dropdown').addClass('active');
+                    return false;
+                }
+            }else{
+
+                if(pagename == 'home'){
+                    $(this).parent().addClass('active');
+                    return false;
+                }
+            }
+
+        });
+    });
+
+</script>
+
+
+
+<div class="top-banner" style="background: url('http://192.168.0.130/Shane_Anciso/uploads/content_image/originalsize/1418291520.png') no-repeat scroll center top rgba(0, 0, 0, 0) !important;">
+    <div class="container">
+        <!-- <h1>Servicing Rexburg, Saint Anthony, Ashton & all surrounding areas</h1>
+
+         <h2>A family business with over 30+ successful years in the East Idaho Snake River Valley...</h2>-->
+
+        <h1>Computer Repair Servicing Austin, Texas and Surrounding Areas.</h1>
+
+        <h2>We have over ten year of success of computer repair in the Austin, Texas area.</h2>
+
+        <img src="http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413456230.png" class="img1" >
+        <div class="clear"></div>
+
+    </div>
+</div>
+
+<div class="story">
+    <div id="brand_s1"></div>
+    <div class="banner-bottom-con">
+        <!-- <h2>Technology</h2>
+         <h3>Simplified</h3>
+         <p>Professional IT Support, Fast Computer Repair & Virtual IT</p>
+
+         <a href="#">For Your Home</a>
+         <a href="#">For Your Business</a>-->
+        <h2>Technology</h2>
+        <h3>Simplified</h3>
+        <p>Professional IT Support, Fast Computer Repair & Virtual IT</p>
+        <a href="#"  page_ink_id="17" pagename="homesupport" style="background:#3030ee !important ">For Your Home</a>
+        <a href="#"  page_ink_id="16" pagename="desktop" style="background:#3030ee !important">For Your Business</a>
+
+    </div>
+    <div class="clear"></div>
+
+
+
+    <div class="middle-blog-contain">
+
+        <div class="container">
+            <div class="middle-wrapper">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- <img src="/images/icon1.png" alt="#" />-->
+                        <img src="http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413523198.png">
+                        <p><strong>Computer Repair</strong></p>
+
+                        <p>Contact Secret Simple to make an appointment for our expert computer or laptop repair and other services. Your computer needs are our highest priority so we will respond quickly. Your satisfaction is a guarantee!</p>
+                        <a href="#" page_ink_id="16" pagename="desktop" style="position:relative;z-index:9999999;background:#3030ee!important">Learn More</a>
+                        <!--<strong>Computer Repair</strong>
+                        <p>Visit our service shop in Saint Anthony, ID for expert computer repair, laptop repair, and PC tune up services. We offer fixed priced services for many computer services – and we guarantee you’ll be satisfied.</p>
+
+                        <a href="#">Learn More</a>-->
+
+
+                    </div>
+                    <div class="col-md-6">
+                        <!--<img src="/images/icon2.png" alt="#" />-->
+                        <img src="http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413809987.png">
+                        <p><strong>IT Services</strong></p>
+
+                        <p>We provide comprehensive IT support, computer maintenance, and other managed services for your business whether large or small. With our process and information technology we can manage yournetwork, servers, and stations so you can keep your focus on your business.</p>
+                        <!--<strong>IT Services</strong>
+                        <p>Comprehensive IT support, maintenance, and managed services for businesses large and small. Let us manage your office network, servers, and workstations – so you can focus on growing your business.</p>
+-->
+                        <a href="#"  page_ink_id="19" pagename="itconsulting"  style="position:relative;z-index:999999;background:#3030ee!important">Learn More</a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="story">
+<div id="brand_s2"></div>
+
+<div class="container">
+
+    <ul id="scroller2">
+
+        <li><img src='http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413450404.png'  alt='#'/></li>      <li><img src='http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413450406.png'  alt='#'/></li>      <li><img src='http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413450408.png'  alt='#'/></li>      <li><img src='http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413450412.png'  alt='#'/></li>      <li><img src='http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413450413.png'  alt='#'/></li>
+        <!-- <li><img src="/images/p1.png" alt=""/></li>
+         <li><img src="/images/p2.png" alt=""/></li>
+         <li><img src="/images/p3.png" alt=""/></li>
+         <li><img src="/images/p4.png" alt=""/></li>
+         <li><img src="/images/p5.png" alt=""/></li>
+         <li><img src="/images/p1.png" alt=""/></li>
+         <li><img src="/images/p2.png" alt=""/></li>
+         <li><img src="/images/p3.png" alt=""/></li>
+         <li><img src="/images/p4.png" alt=""/></li>
+         <li><img src="/images/p5.png" alt=""/></li>
+-->
+
+
+    </ul>
+
+
+</div>
+
+
+<div class="tabtop-contain">
+    <!--<h2>The Computer <span>IQ Promise</span></h2>
+    <p>Our Commitment To An Outstanding Consumer Experience</p>-->
+    <h2>The Secret Simple <span>Promise</span></h2>
+
+    <p>Our Commitment To An Outstanding Consumer Experience</p>
+
+</div>
+
+
+
+<div class="container">
+    <!-- Nav tabs -->
+    <style>
+        .nav-tabs > li.active > a:before{
+
+            border-color: #3030ee transparent transparent #3030ee!important;
+
+        }
+    </style>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active"><a href="#home" style="background:#3030ee!important;color:#ffffff!important" role="tab" data-toggle="tab">General Info</a></li>
+        <li><a href="#profile" role="tab" style="background:#3030ee!important;color:#ffffff!important" data-toggle="tab">IT Services</a></li>
+        <li><a href="#messages" style="background:#3030ee!important;color:#ffffff!important" role="tab" data-toggle="tab">Repair</a></li>
+
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane active" id="home"><!--Computer IQ is absolutely committed to the highest quality Computer Repair and IT services. The experience we want each one of our clients to have is of top importance. As a top-rated Rexburg and Saint Anthony IT Service, take the responsible for technology infrastructure of all businesses throughout Freemont and Madison counties. In addition, our Computer Repair shop, we like to call the Tech bench, consistently helps customers with PC related issues, varying from virus removals, laptop LCD screen replacements, all the way to in-home installation and even custom-built home theater computers. We guarantee our work 100% for 30 days from the time of service, so if you experience any problems, we’ll be happy to resolve the issue at no charge. Our IT Services department is happy to offer a Free Technology Assessment, including analysis of your network infrastructure, backup and disaster recovery plan, internet connectivity, and options for Cloud Solutions. We’re-->
+            <p>Secret Simple is committed to give our customers the highest quality in computer repair and IT services. We strive to always make our services a positive, professional experience in a timely fashion. As a top-rated Austin, Texas IT service and computer repair company, we handle the business of many throughout Austin and the surrounding area. We are a trusted provider of quality PC related issues like virus removals, screen replacements, and hardware repair. Schedule an appointment today for all of your computer needs.</p>
+        </div>
+        <div class="tab-pane" id="profile">
+
+
+            Our professional IT services help you maintain your infrastructure and can be customized to support your unique needs throughout the technology lifecycle.  Secret Simple can provide expert IT support for your growing business. We are qualified and experienced in the IT field and strive for excellence in all our services to ensure your business is always operating at its highest level.
+
+        </div>
+        <div class="tab-pane" id="messages"><!--We offer a number a variety of repair and upgrade services for your personal desktop computer. Whether you utilize your computer for work, pleasure, gaming, home theater, or any other purpose – our team of expert technicians will be happy to run diagnostics and remedy any problems you might be facing. Our services range from virus removal, problems with startup, blue screen of death, upgrades of all types (RAM, Hard Drive, Video Card, Sound Card, etc.), and a range of optimization procedures to keep your computer healthy and running fast. We offer emergency data recovery and hard drive repair. We can restore your valuable data, including photos, videos, documents, and music.<br />
+                <br />
+
+
+                We service all brands of desktop computers, including Dell, HP, Compaq, Lenovo, Sony Vaio, Acer, Asus, Toshiba, Samsung, eMachines, Gateway, Alienware, and many others. </div>
+-->
+            <p>We specialize in troubleshooting, servicing and repairing a wide variety of&nbsp;hardware&nbsp;and&nbsp;software-related&nbsp;personal computer&nbsp;issues and computer&nbsp;network&nbsp;problems. Our professional computer repair services cover everything from failed hardware components, software bugs,&nbsp;driver&nbsp;incompatibilities, spyware and malware problems, network connectivity problems, operating system upgrades, and complete computer overhauls.</p>
+
+        </div>
+    </div>
+
+    <div class="bottom-body">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4">
+
+                    <div class="div-contain">
+
+                        <img src="http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413452014.png" >
+                        <h2 style="background:#3030ee!important;color:#ffffff!important">Computer Services</h2>
+                        <p><span>Remote repair:</span> $50 an hour<br />
+
+                            <span>In shop: </span>$50 an hour (plus cost of parts if required)<br />
+
+                            <span>Home / office visit:</span> $65 an hour<br />
+
+                            <span>Network / printer set up:</span> $65 an hour (plus cost of parts if required).</p>                       <!-- <p><span>Remote repair:</span> $50 an hour<br />
+
+                            <span>In shop: </span>$50 an hour (plus cost of parts if required)<br />
+
+                            <span>Home / office visit:</span> $65 an hour<br />
+
+                            <span>Network / printer set up:</span> $65 an hour (plus cost of parts if required).</p>-->
+
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-4">
+
+                    <div class="div-contain">
+
+                        <img src="http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413453839.png" >
+                        <h2 style="background:#3030ee!important;color:#ffffff!important">One Price Services</h2>
+                        <p><span>Full system tune up:</span><br />
+
+                            $95 (in shop)<br />
+
+                            <span>Operating system install:</span><br />
+
+                            $125 (in shop) </p>
+                        <!-- <img src="/images/bimg2.png"  alt="#"/>
+                         <h2>One Price Services</h2>
+                         <p><span>Full system tune up:</span><br />
+
+                             $95 (in shop)<br />
+
+                             <span>Operating system install:</span><br />
+
+                             $125 (in shop) </p>
+
+ -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="div-contain">
+                        <img src="http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1413454219.png" >
+                        <style>
+                            .bottom-body .div-contain h2:before{
+
+                                border-color: #3030ee transparent transparent #3030ee!important;
+
+                            }
+                        </style>
+                        <h2 style="background:#3030ee!important;;color:#ffffff!important">Maintenance contracts</h2>
+                        <p><span>Up to 5 computers:</span><br />
+
+                            $100 a month (2 visits)<br />
+
+                            <span>6 to 10 computers:</span><br />
+
+                            $175 a month (2 visits)<br />
+
+                            <span>10 or more:</span><br />
+
+                            Contact us for a quote </p>
+
+                        <!--<img src="/images/bimg3.png"  alt="#"/>
+                        <h2>Maintenance contracts</h2>
+                        <p><span>Up to 5 computers:</span><br />
+
+                            $100 a month (2 visits)<br />
+
+                            <span>6 to 10 computers:</span><br />
+
+                            $175 a month (2 visits)<br />
+
+                            <span>10 or more:</span><br />
+
+                            Contact us for a quote </p>
+-->
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-block">
+    <div class="container">
+        <h4>Computer Repair</h4>
+        <img src="/Shane_Anciso/themes/cow/images/b.png"  alt="#"/>
+        <span><a href="#" page_ink_id="16" pagename="desktop">Desktop Computer repair</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/Shane_Anciso/themes/cow/images/b.png"  alt="#"/>
+        <span><a href="#" page_ink_id="17" pagename="homesupport">In-Home Support</a></span>
+
+        <img src="/Shane_Anciso/themes/cow/images/footer-devider.png" alt="#"  style="width:100%; display:block; margin:30px auto;"/>
+        <h4>IT Support</h4>
+        <img src="/Shane_Anciso/themes/cow/images/b.png"  alt="#"/>
+        <span><a href="#" page_ink_id="18" pagename="itsupport">Onsite & Remote IT</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/Shane_Anciso/themes/cow/images/b.png"  alt="#"/>
+        <span><a href="#" page_ink_id="19" pagename="itconsulting">IT Consulting</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/Shane_Anciso/themes/cow/images/b.png"  alt="#"/>
+        <span><a href="#" page_ink_id="20" pagename="emailservices">Email & Communications</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/Shane_Anciso/themes/cow/images/b.png"  alt="#"/>
+        <span><a href="#" page_ink_id="21" pagename="onlineservices">Online Services</a></span>
+        <img src="/Shane_Anciso/themes/cow/images/footer-devider.png" alt="#"  style="width:100%; display:block; margin:30px auto;"/>
+
+        <h4>Partner Companies</h4>
+        <img src="/Shane_Anciso/themes/cow/images/b.png"  alt="#"/>
+        <span><a href="http://www.influxiq.com/" target="_blank">InfluxIQ Dev Drp</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="/Shane_Anciso/themes/cow/images/b.png"  alt="#"/>
+        <span><a href="http://www.spectrumiq.com/" target="_blank">SpectrumIQ Finders</a></span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <!--<img src="/images/b.png"  alt="#"/>
+        <span><a href="http://www.titostv.com/" target="_blank">Tito's TV</a></span>-->
+        <img src="/Shane_Anciso/themes/cow/images/footer-devider.png" alt="#"  style="width:100%; display:block; margin:30px auto;"/>
+        <h4>We have been repairing computers for over a decade!</h4>
+
+        <p>Shane Anciso started Secret Simple Computer Repair in Austin, Texas and has been providing professional services for over ten years. Shane is an expert in computer repair and IT services.</p>
+
+        <!--
+                <h4>In the area over 30 years!</h4>
+
+                <p>ComputerIQ is a family business. Our father, Tito from Tito's TV has been here serving the Saint Anthony, Ashton and Rexburg Idaho area for over 30 years! We are proud to carry on that tradition. We are also a receiving center for his television sales and repair business.</p>
+        -->
+
+
+
+    </div><!-- content -->
+
+
+    <!-- Modal For notify email[start] -->
+    <div id="notifyemailModal" class="modal fade">
+        <div class="modal-header">
+            <a class="close" data-dismiss="modal">&times;</a>
+            <h4>Enter Your Mail : </h4>
+        </div>
+
+        <div class="modal-body">
+            <form method="post" action="#" id="notyfyform" class="form-vertical">
+                <input type="hidden" id="proid_text" />
+                <label class="required" for="UserManager_password2">Confirm Password <span class="required">*</span></label><input type="text" id="notifyemail" name="notifyemail"><span style="display: none" id="notifyemail_em_" class="help-block error"></span>
+
+                <input type="button" id="submitbtn" value="Submit" name="yt3" class="button">
+
+            </form>
+        </div>
+
+
+
+    </div> <!-- Modal For notify email[end] -->
+
+
+
+
+    <a href="#" page_ink_id="1" pagename="home">Home</a> |  <a href="#" page_ink_id="16" pagename="desktop">Computer Repair</a>  | <a href="#" page_ink_id="18" pagename="itsupport">Business IT Services</a> | <a href="#" page_ink_id="23" pagename="website-products">Web Services</a> | <a href="http://toponlinedesigns.com/" target="_blank">Portfolio</a> | <a href="#" page_ink_id="22" pagename="contact">Contact Us</a> | <a href="#" page_ink_id="39" pagename="contact">Custom Service</a>
+
+</div>
+</div>
+
+
+
+
+<div class="footer-main">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6"><p>Copyright &copy; ComputerIQ 2012 All rights reserved</p></div>
+
+            <div class="col-md-6"><div class="footer-logo"><a href="#" page_ink_id="1" pagename="home" ><img src="http://192.168.0.130/Shane_Anciso/uploads/content_image/thumb/1418284768.png"></a></div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div></div>
+
+
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/common.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/link.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/jquery.uploadify.min.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/image_upload.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/facebox.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/wow.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/wow.min.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/simply-scroll.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/nbw-parallax.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/jquery-inview.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/responsiveslides.min.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/colpick.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/jquery-ui-block.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/frontend.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/flowplayer-3.js"></script>
+<script type="text/javascript" src="/Shane_Anciso/assets/dae85bd8/js/marquee.js"></script>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    jQuery(function($) {
+        jQuery('a[rel="tooltip"]').tooltip();
+        jQuery('a[rel="popover"]').popover();
+        jQuery('#notifyemailModal').modal({'show':false});
+    });
+    /*]]>*/
+</script>
+</body>
+</html>
+  
+
+
+
+
+
+
+
+
+
